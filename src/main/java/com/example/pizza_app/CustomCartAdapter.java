@@ -75,7 +75,7 @@ public class CustomCartAdapter extends RecyclerView.Adapter<CustomCartAdapter.Vi
 
                     String sendId = Integer.toString(send.getCartId());
 
-                    String request_url = "http://10.0.2.2:8080/pizzaApp/deleteByCartId?id="+sendId;
+                    String request_url = "http://10.0.2.2:8080/demo/deleteByCartId?id="+sendId;
 
                     RequestQueue queue = Volley.newRequestQueue(context);
                     StringRequest stringRequest = new StringRequest(Request.Method.GET, request_url, null, null);

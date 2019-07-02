@@ -22,7 +22,7 @@ public class OrderActivity extends AppCompatActivity {
     public void submit(View view) {
         Toast.makeText(this,"Orderd Complete",Toast.LENGTH_LONG).show();
 
-        String request_url = "http://10.0.2.2:8080/pizzaApp/deleteCartAll";
+        String request_url = "http://10.0.2.2:8080/demo/deleteCartAll";
 
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, request_url, null, null);

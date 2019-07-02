@@ -38,7 +38,7 @@ public class CartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
-        request_url = "http://10.0.2.2:8080/pizzaApp/cartAll";
+        request_url = "http://10.0.2.2:8080/demo/cartAll";
 
         queue = Volley.newRequestQueue(this);
 

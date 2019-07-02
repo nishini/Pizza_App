@@ -51,7 +51,7 @@ public class DetailScreenActivity extends AppCompatActivity {
     public void order(View view) {
         cartId = Integer.parseInt(intent.getStringExtra("id"));
 
-        String request_url = "http://10.0.2.2:8080/pizzaApp/addCart?pizzaName="+pizzaName+"&pizzaImageUrl="+pizzaImageUrl+"&pizzaPrice="+pizzaPrice+"&pizzaQuantity="+pizzaQuantity;
+        String request_url = "http://10.0.2.2:8080/demo/addCart?pizzaName="+pizzaName+"&pizzaImageUrl="+pizzaImageUrl+"&pizzaPrice="+pizzaPrice+"&pizzaQuantity="+pizzaQuantity;
 
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, request_url, null, null);

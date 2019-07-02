@@ -36,7 +36,7 @@ public class PizzaListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pizza_list);
 
-        request_url = "http://10.0.2.2:8080/pizzaApp/pizzaAll";
+        request_url = "http://10.0.2.2:8080/demo/all";
 
         queue = Volley.newRequestQueue(this);
 
